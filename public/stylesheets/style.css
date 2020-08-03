@@ -1,2 +1,170 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+html {
+  height: 100%; }
+
+body {
+  font-family: "Signika", sans-serif;
+  height: 100%; }
+
+.navigation {
+  width: 100%;
+  height: 5em; }
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%; }
+
+.brand {
+  display: flex;
+  margin-left: 2em;
+  height: 100%;
+  align-self: center; }
+
+.brand img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 70%;
+  margin: auto 0; }
+
+.brand-name {
+  color: #a2abb0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.nav-bar-section1 {
+  height: 100%; }
+
+.nav-bar-items {
+  display: flex;
+  list-style: none;
+  height: 100%;
+  justify-content: flex-end; }
+
+.nav-bar-items .nav-bar-item {
+  margin: 0 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  letter-spacing: 0.2em;
+  color: #a1aaaf; }
+
+.nav-bar-section2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: 2em;
+  height: 100%;
+  justify-content: flex-end; }
+
+.nav-bar-section2 .nav-bar-item {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto 1em; }
+
+.nav-btn {
+  height: 50%;
+  width: 10em;
+  margin: auto 1em;
+  outline: none;
+  border: 0.2em solid #a1aaaf;
+  border-radius: 2px;
+  background-color: #ffffff;
+  color: #a1aaaf;
+  transition: background-color 0.3s; }
+
+.nav-btn:hover,
+.nav-btn:focus {
+  background-color: #5b5b5b;
+  border: 0.2em solid #5b5b5b;
+  color: white; }
+
+.banner {
+  position: relative;
+  height: calc(100% - 10em);
+  background-image: url(/images/kids.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  opacity: 0.9; }
+
+.banner-desc {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 2em;
+  color: #ffffff; }
+
+.banner-desc h4 {
+  margin-top: 6em;
+  margin-bottom: 0.5em;
+  font-weight: normal;
+  letter-spacing: 0.1em; }
+
+.line {
+  width: 8em;
+  border: 0.1em solid #ff9f88;
+  margin-bottom: 2em; }
+
+.banner-desc h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  font-weight: 700; }
+
+.banner-desc h2 {
+  margin-bottom: 1em; }
+
+.donate-today-btn {
+  font-weight: 600;
+  height: 4em;
+  width: 15em;
+  outline: none;
+  border-width: 0;
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s; }
+
+.donate-today-btn:hover,
+.donate-today-btn:focus {
+  opacity: 0.8; }
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  z-index: 1;
+  height: 5em;
+  width: 5em; }
+
+.arrow img {
+  height: 100%; }
+
+.about-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  letter-spacing: 0.2em; }
+
+.about-us-1 {
+  margin-left: 2em;
+  margin-top: 1em; }
+
+.about-us-2 {
+  margin-right: 2em;
+  margin-top: 1em; }
 
 /*# sourceMappingURL=style.css.map */
