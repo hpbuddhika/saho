@@ -7,12 +7,26 @@ html {
   height: 100%; }
 
 body {
+  position: relative;
   font-family: "Signika", sans-serif;
-  height: 100%; }
+  height: 100%;
+  width: 100%;
+  min-width: 500px;
+  max-width: 1500px;
+  margin: auto; }
+
+.over-lay {
+  display: none; }
 
 .navigation {
   width: 100%;
-  height: 5em; }
+  min-height: 5em;
+  height: 5em;
+  position: fixed;
+  z-index: 5;
+  background-color: #ffffff;
+  top: 0;
+  left: 0; }
 
 .nav-bar {
   display: flex;
@@ -26,20 +40,23 @@ body {
   display: flex;
   margin-left: 2em;
   height: 100%;
-  align-self: center; }
+  width: 10em;
+  align-self: center;
+  overflow: hidden; }
 
-.brand img {
+.brand-logo {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 70%;
-  margin: auto 0; }
+  height: 100%;
+  margin: auto 0;
+  transform: scale(1.8);
+  margin-left: 2em;
+  content: url("../images/logo.png"); }
 
-.brand-name {
-  color: #a2abb0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around; }
+.brand-logo:hover,
+.brand-logo:focus {
+  content: url("../images/logoAfter.png"); }
 
 .nav-bar-section1 {
   height: 100%; }
@@ -90,17 +107,28 @@ body {
   border: 0.2em solid #5b5b5b;
   color: white; }
 
+.toggle-btn {
+  display: none;
+  height: 1.7em;
+  width: 2em;
+  margin: auto 2em;
+  cursor: pointer;
+  background-color: white; }
+
 .banner {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
-  height: calc(100% - 10em);
   background-image: url(/images/kids.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
-  opacity: 0.9; }
+  opacity: 0.9;
+  margin-top: 5em; }
 
 .banner-desc {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   width: 50%;
   height: 100%;
@@ -163,8 +191,176 @@ body {
   margin-left: 2em;
   margin-top: 1em; }
 
+.about-us-1 h4 {
+  margin-bottom: 1em; }
+
 .about-us-2 {
   margin-right: 2em;
   margin-top: 1em; }
+
+.line2 {
+  width: 10em;
+  border: 0.1em solid #000000;
+  margin-bottom: 2em; }
+
+.about-us-desc {
+  display: flex;
+  margin: 1em 2em;
+  width: 50%;
+  flex-direction: column;
+  margin-bottom: 3em; }
+
+.about-us-desc h2 {
+  color: #333333;
+  margin-bottom: 1em;
+  font-weight: 700; }
+
+.about-us-desc p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #77797a;
+  line-height: 1.5em; }
+
+.impact {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/images/kids2.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  opacity: 0.9; }
+
+.impact > div {
+  position: absolute;
+  width: 30%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.card1 {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 1em;
+  background-color: #d8a093; }
+
+.card-desc1 {
+  font-size: 3em;
+  line-height: 1em;
+  margin: 1em;
+  color: white; }
+
+.card2 {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  margin: 1em;
+  background-color: #3d354b; }
+
+.card-desc2 {
+  font-size: 3em;
+  line-height: 1em;
+  margin: 1em;
+  color: white; }
+
+.card3 {
+  position: relative;
+  bottom: 25%;
+  right: 37%;
+  margin: 0;
+  background-color: #afabc1; }
+
+.card-desc3 {
+  font-size: 3em;
+  line-height: 1em;
+  margin: 1em;
+  color: white; }
+
+.card-img {
+  position: absolute;
+  width: 3.5em;
+  height: 3.5em;
+  background-color: #d8d1da;
+  top: 5%;
+  right: 5%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.card-img img {
+  width: 70%;
+  height: 70%; }
+
+@media (max-width: 1210px) {
+  .nav-bar-section1,
+  .nav-bar-section2 {
+    display: none; }
+  .toggle-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+  .toggle-btn span {
+    width: 100%;
+    height: 0.15em;
+    background-color: black; }
+  .over-lay {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    background-color: white;
+    position: fixed;
+    top: 5em;
+    z-index: 10;
+    transform: translate(-100%);
+    opacity: 0; }
+  .over-lay-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+  .over-lay-items div {
+    font-family: "Signika", sans-serif;
+    margin: 1em 0;
+    font-weight: 300;
+    color: black; }
+  .over-lay-items div a {
+    font-family: "Signika", sans-serif;
+    margin: 1em 0;
+    font-weight: 300;
+    color: black;
+    text-decoration: none; }
+  .over-lay-add {
+    animation-name: overlay-add;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards; }
+  .over-lay-remove {
+    animation-name: overlay-remove;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards; }
+  @keyframes overlay-add {
+    from {
+      opacity: 0;
+      transform: translate(-100%); }
+    to {
+      transform: translate(0%);
+      opacity: 1; } }
+  @keyframes overlay-remove {
+    from {
+      opacity: 1;
+      transform: translate(0%); }
+    to {
+      transform: translate(-100%);
+      opacity: 0; } } }
 
 /*# sourceMappingURL=style.css.map */
