@@ -12,29 +12,37 @@ body {
   //   font-family: "Roboto", sans-serif;
   position: relative;
   font-family: "Signika", sans-serif;
-  height:100%;
-  width:100%;
+  height: 100%;
+  width: 100%;
   min-width: 500px;
-  max-width: 1500px;
+  max-width: 1680px;
   margin: auto;
- 
 }
 
-.over-lay{
-  display:none;
+.over-lay {
+  box-sizing: border-box;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 5em;
+  z-index: 10;
+  transform: translate(-100%);
+  opacity: 0;
 }
 
 .navigation {
   width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
   min-height: 5em;
   height: 5em;
   position: fixed;
   z-index: 5;
   background-color: #ffffff;
-  top:0;
-  left:0;
 }
-
 
 .nav-bar {
   display: flex;
@@ -134,9 +142,9 @@ body {
   color: white;
 }
 
-.toggle-btn{
-  display:none;
-  height:1.7em;
+.toggle-btn {
+  display: none;
+  height: 1.7em;
   width: 2em;
   margin: auto 2em;
   cursor: pointer;
@@ -153,7 +161,6 @@ body {
   background-position: center;
   background-size: 100% auto;
   opacity: 0.9;
-  margin-top:5em;
 }
 
 .banner-desc {
@@ -200,6 +207,7 @@ body {
   background-color: #ffffff;
   color: #000000;
   transition: background-color 0.3s;
+  margin-bottom: 1em;
 }
 
 .donate-today-btn:hover,
@@ -354,98 +362,320 @@ body {
   height: 70%;
 }
 
+.our-work {
+  display: flex;
+  margin:0 2em;
+  justify-content: space-between;
+}
+
+.work-card {
+  width: 31%;
+  height:45em;
+  background-color:#F1F1F1;
+}
+
+.work-card-img1{
+  width:100%;
+  height:60%;
+  background-image: url(/images/water-drinking-kid.jpg);
+  background-position:left top;
+  background-size: cover;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // opacity:0.9;
+}
+
+.work-card-img2{
+  width:100%;
+  height:60%;
+  background-image: url(/images/learning-kids.jpg);
+  background-position: center;
+  background-size: cover;
+  // background-repeat: no-repeat;
+  // background-size:100%;
+  // opacity:0.8;
+  
+  
+}
+.work-card-img3{
+  width:100%;
+  height:60%;
+  background-image: url(/images/orphanages.jpg);
+  background-position: center;
+  background-size: cover;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-size:100%;
+  // opacity:0.9;
+}
+
+.work-card-content{
+  position: relative;
+  display:flex;
+  flex-direction:column;
+  height:40%;
+  flex-wrap: wrap;
+  
+}
+
+.work-card-content h4{
+  font-size:1.5em;
+  margin:0.66em 0em 0.66em 0.66em;
+  opacity:0.9;
+  letter-spacing:0.1em;
+}
+
+.work-card-content p{
+  margin:0em 1em;
+  letter-spacing:0.1em;
+  margin:0 1em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: rgb(119, 121, 122);
+}
+
+.work-card-content h5{
+  position: absolute;
+  font-size:1em;
+  margin:0.2em 1em;
+  letter-spacing:0.1em;
+  left:0;
+  bottom:1em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color:rgb(0, 0, 0);
+}
+
+.our-work-underline{
+  position: absolute;
+  left:0;
+  bottom:0;
+  margin:1em 1em;
+  width:7em;
+  height:0.2em;
+  background-color: black;
+  opacity: 0.7;
+}
+
+.people{
+  margin-top: 5em;
+  padding-top: 5em;
+  width:100%;
+  height:1150px;
+  background-color:#E1EBF3;
+}
+
+.people-card-img1{
+  width:100%;
+  height:60%;
+  background-image: url(/images/garden.jpg);
+  background-position:center;
+  background-size: cover;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // opacity:0.9;
+}
+
+.people-card-img2{
+  width:100%;
+  height:60%;
+  background-image: url(/images/working-woman.jpg);
+  background-position:center;
+  background-size: cover;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // opacity:0.9;
+}
+
+
+.people-card-img3{
+  width:100%;
+  height:60%;
+  background-image: url(/images/village-boy.jpg);
+  background-position:center;
+  background-size: cover;
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // opacity:0.9;
+}
+
+.our-story{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  widows: 100%;
+  height: 90vh;
+  background-image: url(/images/fisherman.jpg);
+  background-position:top left;
+  background-size: cover;
+}
+
+.our-story h2{
+  color:white;
+  font-size: 3em;
+  font-weight: 700;
+  opacity: 0.8;
+}
+
+
 @media (max-width: 1210px) {
   .nav-bar-section1,
   .nav-bar-section2 {
     display: none;
   }
 
-  .toggle-btn{
-    display:flex;
+  .toggle-btn {
+    display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
   }
 
-  .toggle-btn span{
-    width:100%;
-    height:0.15em;
+  .toggle-btn span {
+    width: 100%;
+    height: 0.15em;
     background-color: rgb(0, 0, 0);
-
   }
 
-  .over-lay{
-    display: block;
-    box-sizing: border-box;
-    text-align: center;
-    height:100%;
-    width:100%;
-    overflow:scroll;
-    background-color:rgb(255, 255, 255);
-    position: fixed;
-    top:5em;
-    z-index: 10;
-    transform: translate(-100%);
-    opacity:0;
+  .card-desc1,
+  .card-desc2,
+  .card-desc3 {
+    font-size: 2em;
   }
 
-  .over-lay-items{
-    display:flex;
+  .card-img {
+    width: 3em;
+    height: 3em;
+  }
+
+  // .over-lay{
+
+  // }
+
+  .over-lay-items {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:100%;
+    height: 100%;
   }
 
-  .over-lay-items div{
+  .over-lay-items div {
     font-family: "Signika", sans-serif;
-    margin:1em 0;
-    font-weight:300;
-    color:black
+    margin: 1em 0;
+    font-weight: 300;
+    color: black;
   }
 
-  .over-lay-items div a{
+  .over-lay-items div a {
     font-family: "Signika", sans-serif;
-    margin:1em 0;
-    font-weight:300;
-    color:black;
+    margin: 1em 0;
+    font-weight: 300;
+    color: black;
     text-decoration: none;
   }
-  
-  .over-lay-add{
-    animation-name:overlay-add;
+
+  .over-lay-add {
+    animation-name: overlay-add;
     animation-duration: 0.5s;
-    animation-fill-mode: forwards;    
+    animation-fill-mode: forwards;
     // animation-timing-function: ease-in;
   }
-  
-  .over-lay-remove{
+
+  .over-lay-remove {
     animation-name: overlay-remove;
     animation-duration: 0.5s;
-    animation-fill-mode: forwards;  
+    animation-fill-mode: forwards;
     // animation-timing-function: ease-in;
   }
-  
+
   @keyframes overlay-add {
     from {
-      opacity:0;
+      opacity: 0;
       transform: translate(-100%);
     }
     to {
       transform: translate(0%);
-      opacity:1;
+      opacity: 1;
     }
   }
-  
+
   @keyframes overlay-remove {
     from {
-      opacity:1;
+      opacity: 1;
       transform: translate(0%);
     }
     to {
       transform: translate(-100%);
-      opacity:0;
+      opacity: 0;
+    }
+  }
+
+  .add-burger-animation {
+    animation-name: add-burger-animation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  .remove-burger-animation {
+    animation-name: remove-burger-animation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes add-burger-animation {
+    from {
+      transform: rotate(0deg);
+      transform-origin: top left;
+    }
+    to {
+      transform: rotate(35deg);
+      transform-origin: top left;
+    }
+  }
+
+  @keyframes remove-burger-animation {
+    from {
+      transform: rotate(35deg);
+      transform-origin: top left;
+    }
+    to {
+      transform: rotate(0deg);
+      transform-origin: top left;
+    }
+  }
+
+  .add-burger-animation-line3 {
+    animation-name: add-burger-animation-line3;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  .remove-burger-animation-line3 {
+    animation-name: remove-burger-animation-line3;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes add-burger-animation-line3 {
+    from {
+      transform: rotate(0deg);
+      transform-origin: top left;
+    }
+    to {
+      transform: rotate(-35deg);
+      transform-origin: top left;
+    }
+  }
+
+  @keyframes remove-burger-animation-line3 {
+    from {
+      transform: rotate(-35deg);
+      transform-origin: top left;
+    }
+    to {
+      transform: rotate(0deg);
+      transform-origin: top left;
     }
   }
 }
-
