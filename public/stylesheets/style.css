@@ -9,11 +9,12 @@ html {
 body {
   position: relative;
   font-family: "Signika", sans-serif;
-  height: 100%;
   width: 100%;
-  min-width: 500px;
   max-width: 1680px;
-  margin: auto; }
+  margin: auto;
+  background-color: blueviolet;
+  border: 5px solid red;
+  overflow: auto; }
 
 .over-lay {
   box-sizing: border-box;
@@ -23,7 +24,7 @@ body {
   overflow: scroll;
   background-color: white;
   position: fixed;
-  top: 5em;
+  top: 5rem;
   z-index: 10;
   transform: translate(-100%);
   opacity: 0; }
@@ -32,11 +33,12 @@ body {
   width: 100%;
   max-width: 1680px;
   margin: 0 auto;
-  min-height: 5em;
-  height: 5em;
+  min-height: 5rem;
+  height: 5rem;
   position: fixed;
   z-index: 5;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  border: 5px solid yellow; }
 
 .nav-bar {
   display: flex;
@@ -48,9 +50,9 @@ body {
 
 .brand {
   display: flex;
-  margin-left: 2em;
+  margin-left: 2rem;
   height: 100%;
-  width: 10em;
+  width: 10rem;
   align-self: center;
   overflow: hidden; }
 
@@ -61,7 +63,7 @@ body {
   height: 100%;
   margin: auto 0;
   transform: scale(1.8);
-  margin-left: 2em;
+  margin-left: 2rem;
   content: url("../images/logo.png"); }
 
 .brand-logo:hover,
@@ -78,18 +80,18 @@ body {
   justify-content: flex-end; }
 
 .nav-bar-items .nav-bar-item {
-  margin: 0 1em;
+  margin: 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.2rem;
   color: #a1aaaf; }
 
 .nav-bar-section2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-right: 2em;
+  margin-right: 2rem;
   height: 100%;
   justify-content: flex-end; }
 
@@ -98,14 +100,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: auto 1em; }
+  margin: auto 1rem; }
 
 .nav-btn {
   height: 50%;
-  width: 10em;
-  margin: auto 1em;
+  width: 10rem;
+  margin: auto 1rem;
   outline: none;
-  border: 0.2em solid #a1aaaf;
+  border: 0.2rem solid #a1aaaf;
   border-radius: 2px;
   background-color: #ffffff;
   color: #a1aaaf;
@@ -114,14 +116,14 @@ body {
 .nav-btn:hover,
 .nav-btn:focus {
   background-color: #5b5b5b;
-  border: 0.2em solid #5b5b5b;
+  border: 0.2rem solid #5b5b5b;
   color: white; }
 
 .toggle-btn {
   display: none;
-  height: 1.7em;
-  width: 2em;
-  margin: auto 2em;
+  height: 1.7rem;
+  width: 2rem;
+  margin: auto 2rem;
   cursor: pointer;
   background-color: white; }
 
@@ -143,38 +145,38 @@ body {
   height: 100%;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-left: 2em;
+  margin-left: 2rem;
   color: #ffffff; }
 
 .banner-desc h4 {
-  margin-top: 6em;
-  margin-bottom: 0.5em;
+  margin-top: 6rem;
+  margin-bottom: 0.5rem;
   font-weight: normal;
-  letter-spacing: 0.1em; }
+  letter-spacing: 0.1rem; }
 
 .line {
-  width: 8em;
-  border: 0.1em solid #ff9f88;
-  margin-bottom: 2em; }
+  width: 8rem;
+  border: 0.1rem solid #ff9f88;
+  margin-bottom: 2rem; }
 
 .banner-desc h1 {
-  font-size: 3em;
-  margin-bottom: 0.5em;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
   font-weight: 700; }
 
 .banner-desc h2 {
-  margin-bottom: 1em; }
+  margin-bottom: 1rem; }
 
 .donate-today-btn {
   font-weight: 600;
-  height: 4em;
-  width: 15em;
+  height: 4rem;
+  width: 15rem;
   outline: none;
   border-width: 0;
   background-color: #ffffff;
   color: #000000;
   transition: background-color 0.3s;
-  margin-bottom: 1em; }
+  margin-bottom: 1rem; }
 
 .donate-today-btn:hover,
 .donate-today-btn:focus {
@@ -185,8 +187,8 @@ body {
   bottom: 0;
   left: 45%;
   z-index: 1;
-  height: 5em;
-  width: 5em; }
+  height: 5rem;
+  width: 5rem; }
 
 .arrow img {
   height: 100%; }
@@ -195,41 +197,41 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  letter-spacing: 0.2em; }
+  letter-spacing: 0.2rem; }
 
 .about-us-1 {
-  margin-left: 2em;
-  margin-top: 1em; }
+  margin-left: 2rem;
+  margin-top: 1rem; }
 
 .about-us-1 h4 {
-  margin-bottom: 1em; }
+  margin-bottom: 1rem; }
 
 .about-us-2 {
-  margin-right: 2em;
-  margin-top: 1em; }
+  margin-right: 2rem;
+  margin-top: 1rem; }
 
 .line2 {
-  width: 10em;
-  border: 0.1em solid #000000;
-  margin-bottom: 2em; }
+  width: 10rem;
+  border: 0.1rem solid #000000;
+  margin-bottom: 2rem; }
 
 .about-us-desc {
   display: flex;
-  margin: 1em 2em;
+  margin: 1rem 2rem;
   width: 50%;
   flex-direction: column;
-  margin-bottom: 3em; }
+  margin-bottom: 3rem; }
 
 .about-us-desc h2 {
   color: #333333;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
   font-weight: 700; }
 
 .about-us-desc p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #77797a;
-  line-height: 1.5em; }
+  line-height: 1.5rem; }
 
 .impact {
   position: relative;
@@ -256,26 +258,26 @@ body {
   position: relative;
   top: 0;
   left: 0;
-  margin: 1em;
+  margin: 1rem;
   background-color: #d8a093; }
 
 .card-desc1 {
-  font-size: 3em;
-  line-height: 1em;
-  margin: 1em;
+  font-size: 3rem;
+  line-height: 1rem;
+  margin: 1rem;
   color: white; }
 
 .card2 {
   position: relative;
   bottom: 0;
   left: 0;
-  margin: 1em;
+  margin: 1rem;
   background-color: #3d354b; }
 
 .card-desc2 {
-  font-size: 3em;
-  line-height: 1em;
-  margin: 1em;
+  font-size: 3rem;
+  line-height: 1rem;
+  margin: 1rem;
   color: white; }
 
 .card3 {
@@ -286,15 +288,15 @@ body {
   background-color: #afabc1; }
 
 .card-desc3 {
-  font-size: 3em;
-  line-height: 1em;
-  margin: 1em;
+  font-size: 3rem;
+  line-height: 1rem;
+  margin: 1rem;
   color: white; }
 
 .card-img {
   position: absolute;
-  width: 3.5em;
-  height: 3.5em;
+  width: 3.5rem;
+  height: 3.5rem;
   background-color: #d8d1da;
   top: 5%;
   right: 5%;
@@ -309,12 +311,12 @@ body {
 
 .our-work {
   display: flex;
-  margin: 0 2em;
+  margin: 0 2rem;
   justify-content: space-between; }
 
 .work-card {
   width: 31%;
-  height: 45em;
+  height: 45rem;
   background-color: #F1F1F1; }
 
 .work-card-img1 {
@@ -346,26 +348,26 @@ body {
   flex-wrap: wrap; }
 
 .work-card-content h4 {
-  font-size: 1.5em;
-  margin: 0.66em 0em 0.66em 0.66em;
+  font-size: 1.5rem;
+  margin: 0.66rem 0rem 0.66rem 0.66rem;
   opacity: 0.9;
-  letter-spacing: 0.1em; }
+  letter-spacing: 0.1rem; }
 
 .work-card-content p {
-  margin: 0em 1em;
-  letter-spacing: 0.1em;
-  margin: 0 1em;
+  margin: 0rem 1rem;
+  letter-spacing: 0.1rem;
+  margin: 0 1rem;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #77797a; }
 
 .work-card-content h5 {
   position: absolute;
-  font-size: 1em;
-  margin: 0.2em 1em;
-  letter-spacing: 0.1em;
+  font-size: 1rem;
+  margin: 0.2rem 1rem;
+  letter-spacing: 0.1rem;
   left: 0;
-  bottom: 1em;
+  bottom: 1rem;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: black; }
@@ -374,15 +376,15 @@ body {
   position: absolute;
   left: 0;
   bottom: 0;
-  margin: 1em 1em;
-  width: 7em;
-  height: 0.2em;
+  margin: 1rem 1rem;
+  width: 7rem;
+  height: 0.2rem;
   background-color: black;
   opacity: 0.7; }
 
 .people {
-  margin-top: 5em;
-  padding-top: 5em;
+  margin-top: 5rem;
+  padding-top: 5rem;
   width: 100%;
   height: 1150px;
   background-color: #E1EBF3; }
@@ -420,7 +422,7 @@ body {
 
 .our-story h2 {
   color: white;
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: 700;
   opacity: 0.8; }
 
@@ -435,15 +437,15 @@ body {
     align-items: center; }
   .toggle-btn span {
     width: 100%;
-    height: 0.15em;
+    height: 0.15rem;
     background-color: black; }
   .card-desc1,
   .card-desc2,
   .card-desc3 {
-    font-size: 2em; }
+    font-size: 2rem; }
   .card-img {
-    width: 3em;
-    height: 3em; }
+    width: 3rem;
+    height: 3rem; }
   .over-lay-items {
     display: flex;
     flex-direction: column;
@@ -452,12 +454,12 @@ body {
     height: 100%; }
   .over-lay-items div {
     font-family: "Signika", sans-serif;
-    margin: 1em 0;
+    margin: 1rem 0;
     font-weight: 300;
     color: black; }
   .over-lay-items div a {
     font-family: "Signika", sans-serif;
-    margin: 1em 0;
+    margin: 1rem 0;
     font-weight: 300;
     color: black;
     text-decoration: none; }
@@ -527,5 +529,52 @@ body {
     to {
       transform: rotate(0deg);
       transform-origin: top left; } } }
+
+@media (max-width: 550px) {
+  .banner-desc h4 {
+    margin-top: 6rem;
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+    letter-spacing: 0.1rem; }
+  .line {
+    width: 8rem;
+    border: 0.1rem solid #ff9f88;
+    margin-bottom: 0.5rem; }
+  .banner-desc h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700; }
+  .banner-desc h2 {
+    margin-bottom: 1rem;
+    font-size: 1rem; }
+  .donate-today-btn {
+    font-weight: 600;
+    height: 2rem;
+    width: 8rem;
+    outline: none;
+    border-width: 0;
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s;
+    margin-bottom: 1rem; }
+  .banner {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: cyan;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    opacity: 0.9; }
+  .our-work {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 2rem;
+    justify-content: space-between; }
+  .work-card {
+    width: 100%;
+    background-color: #F1F1F1;
+    margin: 1em 0; } }
 
 /*# sourceMappingURL=style.css.map */
