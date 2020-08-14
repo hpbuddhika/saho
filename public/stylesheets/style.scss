@@ -1,728 +1,3 @@
-// * {
-//   box-sizing: border-box;
-//   padding: 0;
-//   margin: 0;
-// }
-
-// html {
-//   height: 100%;
-// }
-
-// body {
-//   //   font-family: "Roboto", sans-serif;
-//   position: relative;
-//   font-family: "Signika", sans-serif;
-//   height: 100%;
-//   width: 100%;
-//   min-width: 500px;
-//   max-width: 1680px;
-//   margin: auto;
-//   background-color: blueviolet;
-// }
-
-// .over-lay {
-//   box-sizing: border-box;
-//   text-align: center;
-//   height: 100%;
-//   width: 100%;
-//   overflow: scroll;
-//   background-color: rgb(255, 255, 255);
-//   position: fixed;
-//   top: 5em;
-//   z-index: 10;
-//   transform: translate(-100%);
-//   opacity: 0;
-// }
-
-// .navigation {
-//   width: 100%;
-//   max-width: 1680px;
-//   margin: 0 auto;
-//   min-height: 5em;
-//   height: 5em;
-//   position: fixed;
-//   z-index: 5;
-//   background-color: #ffffff;
-// }
-
-// .nav-bar {
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: space-between;
-//   align-items: center;
-//   width: 100%;
-//   height: 100%;
-// }
-
-// .brand {
-//   display: flex;
-//   margin-left: 2em;
-//   height: 100%;
-//   width: 10em;
-//   align-self: center;
-//   overflow: hidden;
-// }
-
-// .brand-logo {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-around;
-//   height: 100%;
-//   margin: auto 0;
-//   transform: scale(1.8);
-//   margin-left: 2em;
-//   content: url("../images/logo.png");
-// }
-
-// .brand-logo:hover,
-// .brand-logo:focus {
-//   content: url("../images/logoAfter.png");
-// }
-
-// // .brand-name {
-// //   color: #a2abb0;
-// //   display: flex;
-// //   flex-direction: column;
-// //   justify-content: space-around;
-// // }
-
-// .nav-bar-section1 {
-//   height: 100%;
-// }
-
-// .nav-bar-items {
-//   display: flex;
-//   list-style: none;
-//   height: 100%;
-//   justify-content: flex-end;
-// }
-
-// .nav-bar-items .nav-bar-item {
-//   margin: 0 1em;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-around;
-//   letter-spacing: 0.2em;
-//   color: #a1aaaf;
-// }
-
-// .nav-bar-section2 {
-//   display: flex;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-//   margin-right: 2em;
-//   height: 100%;
-//   justify-content: flex-end;
-// }
-
-// .nav-bar-section2 .nav-bar-item {
-//   height: 30%;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-around;
-//   margin: auto 1em;
-// }
-
-// .nav-btn {
-//   height: 50%;
-//   width: 10em;
-//   margin: auto 1em;
-//   outline: none;
-//   border: 0.2em solid #a1aaaf;
-//   border-radius: 2px;
-//   //   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-//   background-color: #ffffff;
-//   color: #a1aaaf;
-//   transition: background-color 0.3s;
-// }
-
-// .nav-btn:hover,
-// .nav-btn:focus {
-//   background-color: #5b5b5b;
-//   border: 0.2em solid #5b5b5b;
-//   color: white;
-// }
-
-// .toggle-btn {
-//   display: none;
-//   height: 1.7em;
-//   width: 2em;
-//   margin: auto 2em;
-//   cursor: pointer;
-//   background-color: rgb(255, 255, 255);
-// }
-
-// .banner {
-//   display: flex;
-//   flex-wrap: wrap;
-//   position: relative;
-//   // height: calc(100% - 5em);
-//   background-image: url(/images/kids.webp);
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: 100% auto;
-//   opacity: 0.9;
-// }
-
-// .banner-desc {
-//   display: flex;
-//   flex-wrap: wrap;
-//   flex-direction: column;
-//   width: 50%;
-//   height: 100%;
-//   justify-content: flex-start;
-//   align-items: flex-start;
-//   margin-left: 2em;
-//   color: #ffffff;
-// }
-
-// .banner-desc h4 {
-//   margin-top: 6em;
-//   margin-bottom: 0.5em;
-//   font-weight: normal;
-//   letter-spacing: 0.1em;
-// }
-
-// .line {
-//   width: 8em;
-//   border: 0.1em solid #ff9f88;
-//   margin-bottom: 2em;
-// }
-
-// .banner-desc h1 {
-//   font-size: 3em;
-//   margin-bottom: 0.5em;
-//   font-weight: 700;
-// }
-
-// .banner-desc h2 {
-//   margin-bottom: 1em;
-// }
-
-// .donate-today-btn {
-//   font-weight: 600;
-//   height: 4em;
-//   width: 15em;
-//   outline: none;
-//   border-width: 0;
-//   background-color: #ffffff;
-//   color: #000000;
-//   transition: background-color 0.3s;
-//   margin-bottom: 1em;
-// }
-
-// .donate-today-btn:hover,
-// .donate-today-btn:focus {
-//   opacity: 0.8;
-// }
-
-// .arrow {
-//   position: absolute;
-//   bottom: 0;
-//   left: 45%;
-//   z-index: 1;
-//   height: 5em;
-//   width: 5em;
-// }
-
-// .arrow img {
-//   height: 100%;
-// }
-
-// .about-us {
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: space-between;
-//   letter-spacing: 0.2em;
-// }
-
-// .about-us-1 {
-//   margin-left: 2em;
-//   margin-top: 1em;
-// }
-
-// .about-us-1 h4 {
-//   margin-bottom: 1em;
-// }
-
-// .about-us-2 {
-//   margin-right: 2em;
-//   margin-top: 1em;
-// }
-
-// .line2 {
-//   width: 10em;
-//   border: 0.1em solid #000000;
-//   margin-bottom: 2em;
-// }
-
-// .about-us-desc {
-//   display: flex;
-//   margin: 1em 2em;
-//   width: 50%;
-//   flex-direction: column;
-//   margin-bottom: 3em;
-// }
-
-// .about-us-desc h2 {
-//   color: #333333;
-//   margin-bottom: 1em;
-//   font-weight: 700;
-// }
-
-// .about-us-desc p {
-//   font-family: "Roboto", sans-serif;
-//   font-weight: 400;
-//   color: rgb(119, 121, 122);
-//   line-height: 1.5em;
-// }
-
-// .impact {
-//   position: relative;
-//   width: 100%;
-//   height: 100vh;
-//   background-image: url(/images/kids2.webp);
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: 100% auto;
-//   opacity: 0.9;
-// }
-
-// .impact > div {
-//   position: absolute;
-//   width: 30%;
-//   height: 45%;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-// }
-
-// .card1 {
-//   display: flex;
-//   flex-wrap: wrap;
-//   position: relative;
-//   top: 0;
-//   left: 0;
-//   margin: 1em;
-//   background-color: #d8a093;
-// }
-
-// .card-desc1 {
-//   font-size: 3em;
-//   line-height: 1em;
-//   margin: 1em;
-//   color: white;
-// }
-
-// .card2 {
-//   position: relative;
-//   bottom: 0;
-//   left: 0;
-//   margin: 1em;
-//   background-color: #3d354b;
-// }
-
-// .card-desc2 {
-//   font-size: 3em;
-//   line-height: 1em;
-//   margin: 1em;
-//   color: white;
-// }
-
-// .card3 {
-//   position: relative;
-//   bottom: 25%;
-//   right: 37%;
-//   margin: 0;
-//   background-color: #afabc1;
-// }
-
-// .card-desc3 {
-//   font-size: 3em;
-//   line-height: 1em;
-//   margin: 1em;
-//   color: white;
-// }
-
-// .card-img {
-//   position: absolute;
-//   width: 3.5em;
-//   height: 3.5em;
-//   background-color: #d8d1da;
-//   top: 5%;
-//   right: 5%;
-//   border-radius: 50%;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-
-// .card-img img {
-//   width: 70%;
-//   height: 70%;
-// }
-
-// .our-work {
-//   display: flex;
-//   margin:0 2em;
-//   justify-content: space-between;
-// }
-
-// .work-card {
-//   width: 31%;
-//   height:45em;
-//   background-color:#F1F1F1;
-// }
-
-// .work-card-img1{
-//   width:100%;
-//   height:60%;
-//   background-image: url(/images/water-drinking-kid.jpg);
-//   background-position:left top;
-//   background-size: cover;
-//   // background-size: cover;
-//   // background-repeat: no-repeat;
-//   // opacity:0.9;
-// }
-
-// .work-card-img2{
-//   width:100%;
-//   height:60%;
-//   background-image: url(/images/learning-kids.jpg);
-//   background-position: center;
-//   background-size: cover;
-//   // background-repeat: no-repeat;
-//   // background-size:100%;
-//   // opacity:0.8;
-  
-  
-// }
-// .work-card-img3{
-//   width:100%;
-//   height:60%;
-//   background-image: url(/images/orphanages.jpg);
-//   background-position: center;
-//   background-size: cover;
-//   // background-size: cover;
-//   // background-repeat: no-repeat;
-//   // background-size:100%;
-//   // opacity:0.9;
-// }
-
-// .work-card-content{
-//   position: relative;
-//   display:flex;
-//   flex-direction:column;
-//   height:40%;
-//   flex-wrap: wrap;
-  
-// }
-
-// .work-card-content h4{
-//   font-size:1.5em;
-//   margin:0.66em 0em 0.66em 0.66em;
-//   opacity:0.9;
-//   letter-spacing:0.1em;
-// }
-
-// .work-card-content p{
-//   margin:0em 1em;
-//   letter-spacing:0.1em;
-//   margin:0 1em;
-//   font-family: "Roboto", sans-serif;
-//   font-weight: 400;
-//   color: rgb(119, 121, 122);
-// }
-
-// .work-card-content h5{
-//   position: absolute;
-//   font-size:1em;
-//   margin:0.2em 1em;
-//   letter-spacing:0.1em;
-//   left:0;
-//   bottom:1em;
-//   font-family: "Roboto", sans-serif;
-//   font-weight: 400;
-//   color:rgb(0, 0, 0);
-// }
-
-// .our-work-underline{
-//   position: absolute;
-//   left:0;
-//   bottom:0;
-//   margin:1em 1em;
-//   width:7em;
-//   height:0.2em;
-//   background-color: black;
-//   opacity: 0.7;
-// }
-
-// .people{
-//   margin-top: 5em;
-//   padding-top: 5em;
-//   width:100%;
-//   height:1150px;
-//   background-color:#E1EBF3;
-// }
-
-// .people-card-img1{
-//   width:100%;
-//   height:60%;
-//   background-image: url(/images/garden.jpg);
-//   background-position:center;
-//   background-size: cover;
-//   // background-size: cover;
-//   // background-repeat: no-repeat;
-//   // opacity:0.9;
-// }
-
-// .people-card-img2{
-//   width:100%;
-//   height:60%;
-//   background-image: url(/images/working-woman.jpg);
-//   background-position:center;
-//   background-size: cover;
-//   // background-size: cover;
-//   // background-repeat: no-repeat;
-//   // opacity:0.9;
-// }
-
-
-// .people-card-img3{
-//   width:100%;
-//   height:60%;
-//   background-image: url(/images/village-boy.jpg);
-//   background-position:center;
-//   background-size: cover;
-//   // background-size: cover;
-//   // background-repeat: no-repeat;
-//   // opacity:0.9;
-// }
-
-// .our-story{
-//   display:flex;
-//   justify-content: center;
-//   align-items: center;
-//   widows: 100%;
-//   height: 90vh;
-//   background-image: url(/images/fisherman.jpg);
-//   background-position:top left;
-//   background-size: cover;
-// }
-
-// .our-story h2{
-//   color:white;
-//   font-size: 3em;
-//   font-weight: 700;
-//   opacity: 0.8;
-// }
-
-
-// @media (max-width: 1210px) {
-//   .nav-bar-section1,
-//   .nav-bar-section2 {
-//     display: none;
-//   }
-
-//   .toggle-btn {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-around;
-//     align-items: center;
-//   }
-
-//   .toggle-btn span {
-//     width: 100%;
-//     height: 0.15em;
-//     background-color: rgb(0, 0, 0);
-//   }
-
-//   .card-desc1,
-//   .card-desc2,
-//   .card-desc3 {
-//     font-size: 2em;
-//   }
-
-//   .card-img {
-//     width: 3em;
-//     height: 3em;
-//   }
-
-//   // .over-lay{
-
-//   // }
-
-//   .over-lay-items {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     height: 100%;
-//   }
-
-//   .over-lay-items div {
-//     font-family: "Signika", sans-serif;
-//     margin: 1em 0;
-//     font-weight: 300;
-//     color: black;
-//   }
-
-//   .over-lay-items div a {
-//     font-family: "Signika", sans-serif;
-//     margin: 1em 0;
-//     font-weight: 300;
-//     color: black;
-//     text-decoration: none;
-//   }
-
-//   .over-lay-add {
-//     animation-name: overlay-add;
-//     animation-duration: 0.5s;
-//     animation-fill-mode: forwards;
-//     // animation-timing-function: ease-in;
-//   }
-
-//   .over-lay-remove {
-//     animation-name: overlay-remove;
-//     animation-duration: 0.5s;
-//     animation-fill-mode: forwards;
-//     // animation-timing-function: ease-in;
-//   }
-
-//   @keyframes overlay-add {
-//     from {
-//       opacity: 0;
-//       transform: translate(-100%);
-//     }
-//     to {
-//       transform: translate(0%);
-//       opacity: 1;
-//     }
-//   }
-
-//   @keyframes overlay-remove {
-//     from {
-//       opacity: 1;
-//       transform: translate(0%);
-//     }
-//     to {
-//       transform: translate(-100%);
-//       opacity: 0;
-//     }
-//   }
-
-//   .add-burger-animation {
-//     animation-name: add-burger-animation;
-//     animation-duration: 0.5s;
-//     animation-fill-mode: forwards;
-//   }
-
-//   .remove-burger-animation {
-//     animation-name: remove-burger-animation;
-//     animation-duration: 0.5s;
-//     animation-fill-mode: forwards;
-//   }
-
-//   @keyframes add-burger-animation {
-//     from {
-//       transform: rotate(0deg);
-//       transform-origin: top left;
-//     }
-//     to {
-//       transform: rotate(35deg);
-//       transform-origin: top left;
-//     }
-//   }
-
-//   @keyframes remove-burger-animation {
-//     from {
-//       transform: rotate(35deg);
-//       transform-origin: top left;
-//     }
-//     to {
-//       transform: rotate(0deg);
-//       transform-origin: top left;
-//     }
-//   }
-
-//   .add-burger-animation-line3 {
-//     animation-name: add-burger-animation-line3;
-//     animation-duration: 0.5s;
-//     animation-fill-mode: forwards;
-//   }
-
-//   .remove-burger-animation-line3 {
-//     animation-name: remove-burger-animation-line3;
-//     animation-duration: 0.5s;
-//     animation-fill-mode: forwards;
-//   }
-
-//   @keyframes add-burger-animation-line3 {
-//     from {
-//       transform: rotate(0deg);
-//       transform-origin: top left;
-//     }
-//     to {
-//       transform: rotate(-35deg);
-//       transform-origin: top left;
-//     }
-//   }
-
-//   @keyframes remove-burger-animation-line3 {
-//     from {
-//       transform: rotate(-35deg);
-//       transform-origin: top left;
-//     }
-//     to {
-//       transform: rotate(0deg);
-//       transform-origin: top left;
-//     }
-//   }
-// }
-
-// @media (max-width: 1210px) {
-
-//   .banner-desc h4 {
-//     margin-top: 6em;
-//     margin-bottom: 0.5 em;
-//     font-weight: normal;
-//     letter-spacing: 0.1em;
-//   }
-  
-//   .line {
-//     width: 8em;
-//     border: 0.1em solid #ff9f88;
-//     margin-bottom: 2em;
-//   }
-  
-//   .banner-desc h1 {
-//     font-size: 3em;
-//     margin-bottom: 0.5em;
-//     font-weight: 700;
-//   }
-  
-//   .banner-desc h2 {
-//     margin-bottom: 1em;
-//   }
-  
-//   .donate-today-btn {
-//     font-weight: 600;
-//     height: 4em;
-//     width: 15em;
-//     outline: none;
-//     border-width: 0;
-//     background-color: #ffffff;
-//     color: #000000;
-//     transition: background-color 0.3s;
-//     margin-bottom: 1em;
-//   }
-  
-// }
-
-
-
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -731,6 +6,7 @@
 
 html {
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -738,11 +14,9 @@ body {
   position: relative;
   font-family: "Signika", sans-serif;
   width: 100%;
-  max-width: 1680px;
+  max-width: 900px;
   margin: auto;
-  background-color: blueviolet;
-  border:5px solid red;
-  overflow:auto;
+  // overflow:auto;
 }
 
 .over-lay {
@@ -768,7 +42,6 @@ body {
   position: fixed;
   z-index: 5;
   background-color: #ffffff;
-  border:5px solid yellow;
 }
 
 .nav-bar {
@@ -1091,42 +364,40 @@ body {
 
 .our-work {
   display: flex;
-  margin:0 2rem;
+  margin: 0 2rem;
   justify-content: space-between;
 }
 
 .work-card {
   width: 31%;
-  height:45rem;
-  background-color:#F1F1F1;
+  height: 45rem;
+  background-color: #f1f1f1;
 }
 
-.work-card-img1{
-  width:100%;
-  height:60%;
+.work-card-img1 {
+  width: 100%;
+  height: 60%;
   background-image: url(/images/water-drinking-kid.jpg);
-  background-position:left top;
+  background-position: left top;
   background-size: cover;
   // background-size: cover;
   // background-repeat: no-repeat;
   // opacity:0.9;
 }
 
-.work-card-img2{
-  width:100%;
-  height:60%;
+.work-card-img2 {
+  width: 100%;
+  height: 60%;
   background-image: url(/images/learning-kids.jpg);
   background-position: center;
   background-size: cover;
   // background-repeat: no-repeat;
   // background-size:100%;
   // opacity:0.8;
-  
-  
 }
-.work-card-img3{
-  width:100%;
-  height:60%;
+.work-card-img3 {
+  width: 100%;
+  height: 60%;
   background-image: url(/images/orphanages.jpg);
   background-position: center;
   background-size: cover;
@@ -1136,114 +407,111 @@ body {
   // opacity:0.9;
 }
 
-.work-card-content{
+.work-card-content {
   position: relative;
-  display:flex;
-  flex-direction:column;
-  height:40%;
+  display: flex;
+  flex-direction: column;
+  height: 40%;
   flex-wrap: wrap;
-  
 }
 
-.work-card-content h4{
-  font-size:1.5rem;
-  margin:0.66rem 0rem 0.66rem 0.66rem;
-  opacity:0.9;
-  letter-spacing:0.1rem;
+.work-card-content h4 {
+  font-size: 1.5rem;
+  margin: 0.66rem 0rem 0.66rem 0.66rem;
+  opacity: 0.9;
+  letter-spacing: 0.1rem;
 }
 
-.work-card-content p{
-  margin:0rem 1rem;
-  letter-spacing:0.1rem;
-  margin:0 1rem;
+.work-card-content p {
+  margin: 0rem 1rem;
+  letter-spacing: 0.1rem;
+  margin: 0 1rem;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: rgb(119, 121, 122);
 }
 
-.work-card-content h5{
+.work-card-content h5 {
   position: absolute;
-  font-size:1rem;
-  margin:0.2rem 1rem;
-  letter-spacing:0.1rem;
-  left:0;
-  bottom:1rem;
+  font-size: 1rem;
+  margin: 0.2rem 1rem;
+  letter-spacing: 0.1rem;
+  left: 0;
+  bottom: 1rem;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
-.our-work-underline{
+.our-work-underline {
   position: absolute;
-  left:0;
-  bottom:0;
-  margin:1rem 1rem;
-  width:7rem;
-  height:0.2rem;
+  left: 0;
+  bottom: 0;
+  margin: 1rem 1rem;
+  width: 7rem;
+  height: 0.2rem;
   background-color: black;
   opacity: 0.7;
 }
 
-.people{
+.people {
   margin-top: 5rem;
   padding-top: 5rem;
-  width:100%;
-  height:1150px;
-  background-color:#E1EBF3;
+  width: 100%;
+  height: 1150px;
+  background-color: #e1ebf3;
 }
 
-.people-card-img1{
-  width:100%;
-  height:60%;
+.people-card-img1 {
+  width: 100%;
+  height: 60%;
   background-image: url(/images/garden.jpg);
-  background-position:center;
+  background-position: center;
   background-size: cover;
   // background-size: cover;
   // background-repeat: no-repeat;
   // opacity:0.9;
 }
 
-.people-card-img2{
-  width:100%;
-  height:60%;
+.people-card-img2 {
+  width: 100%;
+  height: 60%;
   background-image: url(/images/working-woman.jpg);
-  background-position:center;
+  background-position: center;
   background-size: cover;
   // background-size: cover;
   // background-repeat: no-repeat;
   // opacity:0.9;
 }
 
-
-.people-card-img3{
-  width:100%;
-  height:60%;
+.people-card-img3 {
+  width: 100%;
+  height: 60%;
   background-image: url(/images/village-boy.jpg);
-  background-position:center;
+  background-position: center;
   background-size: cover;
   // background-size: cover;
   // background-repeat: no-repeat;
   // opacity:0.9;
 }
 
-.our-story{
-  display:flex;
+.our-story {
+  display: flex;
   justify-content: center;
   align-items: center;
   widows: 100%;
   height: 90vh;
   background-image: url(/images/fisherman.jpg);
-  background-position:top left;
+  background-position: top left;
   background-size: cover;
 }
 
-.our-story h2{
-  color:white;
+.our-story h2 {
+  color: white;
   font-size: 3rem;
   font-weight: 700;
   opacity: 0.8;
 }
-
 
 @media (max-width: 1210px) {
   .nav-bar-section1,
@@ -1408,31 +676,63 @@ body {
 }
 
 @media (max-width: 550px) {
+  .banner {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    // height: calc(100% - 5rem);
+    // background-image: url(/images/kids.webp);
+    background-color: cyan;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    opacity: 0.9;
+    min-height: 500px;
+  }
+
+  .banner-desc {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 2rem;
+    margin-top: 4rem;
+    color: #ffffff;
+  }
 
   .banner-desc h4 {
-    margin-top: 6rem;
-    margin-bottom: 0.5rem;
+    // background-color: blue;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
     font-weight: normal;
     letter-spacing: 0.1rem;
+    font-size: 0.7rem;
   }
-  
+
   .line {
     width: 8rem;
     border: 0.1rem solid #ff9f88;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
-  
+
   .banner-desc h1 {
+    // background-color: rgb(0, 255, 42);
     font-size: 2rem;
     margin-bottom: 0.5rem;
     font-weight: 700;
   }
-  
+
   .banner-desc h2 {
+    // background-color: rgb(255, 0, 242);
     margin-bottom: 1rem;
-    font-size:1rem;
+    font-size: 1rem;
   }
-  
+
   .donate-today-btn {
     font-weight: 600;
     height: 2rem;
@@ -1445,34 +745,146 @@ body {
     margin-bottom: 1rem;
   }
 
-  .banner {
+  .about-us {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    letter-spacing: 0.2rem;
+    padding: 0 0.1rem;
+  }
+
+  .about-us-desc {
+    display: flex;
+    margin: 0rem 0rem;
+    padding: 0 2rem;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    font-size: 1rem;
+  }
+
+  .about-us-1{
+   margin-right: 1rem;
+  }
+
+  .about-us-1 h4 {
+    margin-bottom: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .about-us-2 h4 {
+    font-size: 0.7rem;
+
+  }
+
+  .line {
+    width: 5rem;
+    border: 0.1rem solid #ff9f88;
+    margin-bottom: 1rem;
+  }
+
+  .line2 {
+    width: 8rem;
+    border: 0.1rem solid #000000;
+    margin-bottom: 2rem;
+  }
+
+  .arrow {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    z-index: 1;
+    height: 5rem;
+    width: 5rem;
+  }
+  //impact start
+
+  .impact {
     position: relative;
-    // height: calc(100% - 5rem);
-    // background-image: url(/images/kids.webp);
-    background-color: cyan;
-    background-repeat: no-repeat;
+    width: 100%;
+    height: 58vh;
+    background-image: url(/images/kids2.webp);
     background-position: center;
-    background-size:auto;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
     opacity: 0.9;
+
+  }
+
+  .impact > div {
+    position: absolute;
+    width: 30%;
+    height: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .card-desc1 {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin: 1rem;
+    color: white;
+  }
+
+  .card-desc2 {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin: 1rem;
+    color: white;
+  }
+
+  .card-desc3 {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin: 1rem;
+    color: white;
+
+  }
+
+  .card3 {
+    position: relative;
+    bottom: 25%;
+    right: 34.5%;
+    margin: 0;
+    background-color: #afabc1;
+  }
+
+  .card-img {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-color: #d8d1da;
+    top: 5%;
+    right: 5%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
+  .card-img img {
+    width: 70%;
+    height: 70%;
+  }
+  
+  //impact end
+
   .our-work {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin:0 2rem;
+    margin: 0 2rem;
     justify-content: space-between;
+    background-color: aqua;
   }
-  
+
   .work-card {
-    width:100%;
+    width: 100%;
     // height:100%;
-    background-color:#F1F1F1;
-    margin:1em 0;
+    background-color: #f1f1f1;
+    margin: 1em 0;
   }
-
-  
 }
-
