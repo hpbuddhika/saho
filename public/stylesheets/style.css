@@ -11,7 +11,7 @@ body {
   position: relative;
   font-family: "Signika", sans-serif;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: auto; }
 
 .over-lay {
@@ -29,7 +29,7 @@ body {
 
 .navigation {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   min-height: 5rem;
   height: 5rem;
@@ -431,7 +431,7 @@ body {
     display: flex;
     margin-left: 1.9rem;
     height: 100%;
-    width: 10rem;
+    width: 8rem;
     align-self: center;
     overflow: hidden; }
   .brand-logo {
@@ -450,16 +450,14 @@ body {
     display: flex;
     list-style: none;
     height: 100%;
-    justify-content: flex-end;
-    background-color: greenyellow; }
+    justify-content: flex-end; }
   .nav-bar-items .nav-bar-item {
     margin: 0 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     letter-spacing: 0.2rem;
-    color: #a1aaaf;
-    background-color: goldenrod; }
+    color: #a1aaaf; }
   .nav-bar-section2 {
     display: flex;
     flex-direction: row;
@@ -472,11 +470,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: auto 1rem; }
+    margin: auto 0.5rem; }
   .nav-btn {
     height: 50%;
-    width: 10rem;
-    margin: auto 1rem;
+    width: 8rem;
+    margin: auto 0.5rem;
     outline: none;
     border: 0.2rem solid #a1aaaf;
     border-radius: 2px;
@@ -489,7 +487,7 @@ body {
     border: 0.2rem solid #5b5b5b;
     color: white; } }
 
-@media (max-width: 830px) {
+@media (max-width: 1050px) {
   .nav-bar-section1,
   .nav-bar-section2 {
     display: none; }
@@ -603,15 +601,12 @@ body {
       transform-origin: top left; } } }
 
 @media (max-width: 760px) {
-  body {
-    background-color: forestgreen; }
   .banner {
     display: flex;
     flex-wrap: wrap;
     position: relative;
     justify-content: flex-start;
     align-items: center;
-    background-color: cyan;
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
@@ -713,8 +708,7 @@ body {
     font-size: 1.2rem;
     line-height: 1.2rem;
     margin: 1rem;
-    color: white;
-    background-color: goldenrod; }
+    color: white; }
   .card-desc2 {
     font-size: 1.2rem;
     line-height: 1.2rem;
@@ -787,7 +781,6 @@ body {
     position: relative;
     justify-content: flex-start;
     align-items: center;
-    background-color: cyan;
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
@@ -954,8 +947,6 @@ body {
     color: white;
     font-size: 2rem;
     font-weight: 700;
-    opacity: 0.8; }
-  body {
-    background-color: deeppink; } }
+    opacity: 0.8; } }
 
 /*# sourceMappingURL=style.css.map */
